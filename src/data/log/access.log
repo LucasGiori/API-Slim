@@ -1,0 +1,6 @@
+27/11/2020 01:04:13 [GET] http://usuario:senha@127.0.0.1:8000/got/personagens/4 0.72s
+27/11/2020 01:05:41 [GET] http://usuario:senha4@127.0.0.1:8000/got/personagens/4 0s
+27/11/2020 01:05:46 [GET] http://usuario:senha@127.0.0.1:8000/got/personagens/4 0.85s
+27/11/2020 01:05:55 [GET] http://usuario:senha@127.0.0.1:8000/got/personagens/ 0s
+27/11/2020 01:29:50 [GET] http://usuario:senha@127.0.0.1:8000/got/personagens/ 0.02s
+27/11/2020 01:35:07 [GET] http://usuario:senha@127.0.0.1:8000/got/personagens/ 0.01s
