@@ -17,6 +17,11 @@ final class GetCharactersByIdHandler extends BaseHandler
 {
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response,$args) : ResponseInterface
     {
+        if ($request->getAttribute("cache")){
+            $response->getBody()->write($request->getAttribute("cache"));
+            return $response->withHeader('Content-Type','application/json')->withStatus(StatusCodeInterface::STATUS_OK);
+        }
+
         $gotRepository =  new RepositoryGot(new Client());
         $gotService = new ServiceGot($gotRepository);
         $result = $gotService->getById((int)$args['id']);
